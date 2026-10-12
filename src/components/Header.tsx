@@ -15,11 +15,9 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
-  // Рефы для отслеживания кликов вне элементов
   const langDropdownRef = useRef<HTMLDivElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-  // Закрытие языкового dropdown при клике вне
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (langDropdownRef.current && !langDropdownRef.current.contains(event.target as Node)) {
@@ -92,15 +90,7 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
             ))}
           </nav>
 
-          {/* Правая часть: язык + корзина + мобильное меню */}
+          {/* Правая часть */}
           <div className="flex items-center gap-3" ref={mobileMenuRef}>
             {/* Языковой переключатель */}
-            <div className="relative hidden sm:block" ref={langDropdownRef}>
-              <button 
-                onClick={() => setLangDropdownOpen(!langDropdownOpen)} 
-                className="flex items-center gap-2 text-charcoal-800 hover:text-gold-600 px-3 py-2 rounded-lg hover:bg-cream-100 transition-colors"
-              >
-                <span className="uppercase font-semibold text-sm">{lang}</span>
-              </button>
-              <AnimatePresence>
-                {langDropdownOpen
+            <div className
