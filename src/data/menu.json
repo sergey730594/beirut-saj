@@ -1,14 +1,812 @@
 [
-  { "id": "hummus", "name": { "en": "Hummus", "ka": "ჰუმუსი", "ru": "Хумус", "ar": "حمص" }, "description": { "en": "Creamy chickpea dip with tahini, lemon, and garlic", "ka": "კრემისებრი ნუტის პასტა ტაჰინით, ლიმონით და ნიორით", "ru": "Кремовый соус из нута с тахини, лимоном и чесноком", "ar": "حمص كريمي مع الطحينة والليمون والثوم" }, "price": 12, "category": "coldMeze", "image": "https://images.unsplash.com/photo-1571096880275-c0d481a1f639?w=400" },
-  { "id": "mutabbal", "name": { "en": "Mutabbal", "ka": "მუტაბალი", "ru": "Мутаббаль", "ar": "متبل" }, "description": { "en": "Smoky roasted eggplant with tahini and yogurt", "ka": "მოწვეული ბადრიჯანი ტაჰინით და იოგურტით", "ru": "Копченый баклажан с тахини и йогуртом", "ar": "باذنجان مشوي مدخن مع الطحينة واللبن" }, "price": 14, "category": "coldMeze", "image": "https://images.unsplash.com/photo-1541544744-cc6196a046e0?w=400" },
-  { "id": "tabbouleh", "name": { "en": "Tabbouleh", "ka": "ტაბულე", "ru": "Таббуле", "ar": "تبولة" }, "description": { "en": "Fresh parsley salad with tomatoes, mint, and bulgur", "ka": "ახალი პეტრუშკის სალათი პომიდვრით, პიტნით და ბულგურით", "ru": "Салат из свежей петрушки с помидорами, мятой и булгуром", "ar": "سلطة بقدونس طازجة مع الطماطم والنعناع والبرغل" }, "price": 13, "category": "coldMeze", "image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=400" },
-  { "id": "falafel", "name": { "en": "Falafel", "ka": "ფალაფელი", "ru": "Фалафель", "ar": "فلافل" }, "description": { "en": "Crispy chickpea fritters with tahini sauce (6 pcs)", "ka": "ხრაშუნა ნუტის კოტლეტები ტაჰინის სოუსით (6 ცალი)", "ru": "Хрустящие котлеты из нута с соусом тахини (6 шт)", "ar": "فلافل مقرمش مع صلصة الطحينة (6 قطع)" }, "price": 16, "category": "hotMeze", "image": "https://images.unsplash.com/photo-1593001872095-7d5f5c731b3e?w=400" },
-  { "id": "kebbe", "name": { "en": "Kibbeh", "ka": "კიბე", "ru": "Киббе", "ar": "كبة" }, "description": { "en": "Spiced lamb and bulgur croquettes (4 pcs)", "ka": "ცხარე ცხვრის და ბულგურის კროკეტები (4 ცალი)", "ru": "Крокеты из пряной баранины и булгура (4 шт)", "ar": "كروكيت لحم ضأن متبل بالبرغل (4 قطع)" }, "price": 18, "category": "hotMeze", "image": "https://images.unsplash.com/photo-1541544537156-21c5299228d8?w=400" },
-  { "id": "zaatar-manousheh", "name": { "en": "Zaatar Manousheh", "ka": "ზაათარ მანუშე", "ru": "Заатар Мануше", "ar": "مناقيش زعتر" }, "description": { "en": "Traditional saj bread with zaatar, olive oil, and sesame", "ka": "ტრადიციული საჯ პური ზაათარით, ზეითუნის ზეთით და სეზამით", "ru": "Традиционный хлеб садж с заатаром, оливковым маслом и кунжутом", "ar": "خبز صاج تقليدي بالزعتر وزيت الزيتون والسمسم" }, "price": 10, "category": "sajBread", "image": "https://images.unsplash.com/photo-1626804475297-411d863b67ab?w=400" },
-  { "id": "lahm-bi-ajin", "name": { "en": "Lahm bi Ajin", "ka": "ლაჰმ ბი აჯინი", "ru": "Лахм бидждин", "ar": "لحم بعجين" }, "description": { "en": "Signature saj bread with spiced minced lamb, tomatoes, and onions", "ka": "საჯ პური ცხარე ცხვრის ფარშით, პომიდვრით და ხახვით", "ru": "Фирменный хлеб садж с пряным фаршем из баранины, помидорами и луком", "ar": "خبز صاج مميز مع لحم ضأن مفلفل متبل وطماطم وبصل" }, "price": 16, "category": "sajBread", "image": "https://images.unsplash.com/photo-1626804475315-187515343541?w=400" },
-  { "id": "shish-tawook", "name": { "en": "Shish Tawook", "ka": "შიშ ტავუკი", "ru": "Шиш Таук", "ar": "شيش طاووق" }, "description": { "en": "Marinated chicken skewers with garlic sauce and grilled vegetables", "ka": "მარინირებული ქათმის შამფურები ნივრის სოუსით და გრილზე მომზადებული ბოსტნეულით", "ru": "Маринованные шашлыки из курицы с чесночным соусом и овощами на гриле", "ar": "أسياخ دجاج متبل مع صلصة الثوم والخضروات المشوية" }, "price": 28, "category": "grills", "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400" },
-  { "id": "mixed-grill", "name": { "en": "Mixed Grill", "ka": "შერეული გრილი", "ru": "Микс гриль", "ar": "مشاوي مشكلة" }, "description": { "en": "Assorted lamb, chicken, and kofta skewers with rice and salad", "ka": "შერეული ცხვრის, ქათმის და კოფტას შამფურები ბრინჯით და სალათით", "ru": "Ассорти шашлыков из баранины, курицы и кофты с рисом и салатом", "ar": "أسياخ مشكلة من اللحم الضأن والدجاج والكفتا مع الأرز والسلطة" }, "price": 45, "category": "grills", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" },
-  { "id": "baklava", "name": { "en": "Baklava", "ka": "ბაქლავა", "ru": "Пахлава", "ar": "بقلاوة" }, "description": { "en": "Layered phyllo pastry with pistachios and honey syrup", "ka": "ფილოს ფენები ფისტებით და თაფლის სიროფით", "ru": "Слоеное тесто фило с фисташками и медовым сиропом", "ar": "عجينة فيلو طبقات مع الفستق وسير العسل" }, "price": 15, "category": "desserts", "image": "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=400" },
-  { "id": "knefeh", "name": { "en": "Knefeh", "ka": "კნაფე", "ru": "Кнафе", "ar": "كنافة" }, "description": { "en": "Warm cheese pastry soaked in sweet syrup with pistachios", "ka": "თბილი ყველის ცომი ტკბილ სიროფში ფისტებით", "ru": "Теплая сырная выпечка в сладком сиропе с фисташками", "ar": "عجينة جبنة دافئة مغموسة في شراب حلو مع الفستق" }, "price": 18, "category": "desserts", "image": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=400" },
-  { "id": "mint-lemonade", "name": { "en": "Mint Lemonade", "ka": "პიტნიანი ლიმონათი", "ru": "Лимонад с мятой", "ar": "ليموناضة بالنعناع" }, "description": { "en": "Freshly squeezed lemon juice with mint and ice", "ka": "ახლად გამოწურული ლიმონის წვენი პიტნით და ყინულით", "ru": "Свежевыжатый лимонный сок с мятой и льдом", "ar": "عصير ليمون طازج مع النعناع والثلج" }, "price": 8, "category": "beverages", "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400" }
+  {
+    "id": "tabbouleh",
+    "name": {
+      "en": "Tabbouleh",
+      "ka": "ტაბულე",
+      "ru": "Таббуле",
+      "ar": "تبولة"
+    },
+    "description": {
+      "en": "Fresh parsley salad with tomatoes, mint, and bulgur",
+      "ka": "ახალი პეტრუშკის სალათი პომიდვრით, პიტნით და ბულგურით",
+      "ru": "Салат из свежей петрушки с помидорами, мятой и булгуром",
+      "ar": "سلطة بقدونس طازجة مع الطماطم والنعناع والبرغل"
+    },
+    "price": 15,
+    "category": "salad",
+    "image": "/images/tabbouleh.jpg"
+  },
+  {
+    "id": "fattouch",
+    "name": {
+      "en": "Fattouch",
+      "ka": "ფატუში",
+      "ru": "Фаттуш",
+      "ar": "فتوش"
+    },
+    "description": {
+      "en": "Mixed greens with crispy pita, sumac, and pomegranate dressing",
+      "ka": "შერეული მწვანილი ხრაშუნა პიტით, სუმაკით და ბროწეულის სოუსით",
+      "ru": "Смешанная зелень с хрустящей питой, сумаком и гранатовой заправкой",
+      "ar": "خضروات مشكلة مع خبز مقرمش والسماق ودبس الرمان"
+    },
+    "price": 15,
+    "category": "salad",
+    "image": "/images/fattouch.jpg"
+  },
+  {
+    "id": "omelette",
+    "name": {
+      "en": "Omelette",
+      "ka": "ომლეტი",
+      "ru": "Омлет",
+      "ar": "أومليت"
+    },
+    "description": {
+      "en": "Fluffy eggs with vegetables and herbs",
+      "ka": "ჰაეროვანი კვერცხი ბოსტნეულით და მწვანილით",
+      "ru": "Пышный омлет с овощами и зеленью",
+      "ar": "عجة مع الخضروات والأعشاب"
+    },
+    "price": 12,
+    "category": "breakfast",
+    "image": "/images/omelette.jpg"
+  },
+  {
+    "id": "fatteh",
+    "name": {
+      "en": "Fatteh",
+      "ka": "ფატე",
+      "ru": "Фатте",
+      "ar": "فتة"
+    },
+    "description": {
+      "en": "Layered chickpeas, crispy bread, and yogurt with tahini",
+      "ka": "ნუტი, ხრაშუნა პური და იოგურტი ტაჰინით",
+      "ru": "Слоёное блюдо из нута, хрустящего хлеба и йогурта с тахини",
+      "ar": "حمص وخبز مقرمش ولبن مع الطحينة"
+    },
+    "price": 18,
+    "category": "breakfast",
+    "image": "/images/fatteh.jpg"
+  },
+  {
+    "id": "falafel-plate",
+    "name": {
+      "en": "Falafel (Plate)",
+      "ka": "ფალაფელი (თეფში)",
+      "ru": "Фалафель (тарелка)",
+      "ar": "فلافل (طبق)"
+    },
+    "description": {
+      "en": "Crispy chickpea fritters with tahini sauce and salad",
+      "ka": "ხრაშუნა ნუტის კოტლეტები ტაჰინის სოუსით და სალათით",
+      "ru": "Хрустящие котлеты из нута с соусом тахини и салатом",
+      "ar": "فلافل مقرمش مع صلصة الطحينة والسلطة"
+    },
+    "price": 15,
+    "category": "breakfast",
+    "image": "/images/falafel-plate.jpg"
+  },
+  {
+    "id": "falafel-wrap",
+    "name": {
+      "en": "Falafel Wrap",
+      "ka": "ფალაფელის როლი",
+      "ru": "Фалафель ролл",
+      "ar": "فلافل راب"
+    },
+    "description": {
+      "en": "Falafel wrapped in saj bread with vegetables and tahini",
+      "ka": "ფალაფელი საჯ პურში ბოსტნეულით და ტაჰინით",
+      "ru": "Фалафель в садж хлебе с овощами и тахини",
+      "ar": "فلافل ملفوف في خبز الصاج مع الخضروات والطحينة"
+    },
+    "price": 10,
+    "category": "sandwiches",
+    "image": "/images/falafel-wrap.jpg"
+  },
+  {
+    "id": "foul-mdammas",
+    "name": {
+      "en": "Foul Mdammas",
+      "ka": "ფულ მედამასი",
+      "ru": "Фуль меддамас",
+      "ar": "فول مدمس"
+    },
+    "description": {
+      "en": "Slow-cooked fava beans with lemon, garlic, and olive oil",
+      "ka": "ნელა მოხარშული ფავას ლობიო ლიმონით, ნიორით და ზეითუნის ზეთით",
+      "ru": "Медленно приготовленные бобы фава с лимоном, чесноком и оливковым маслом",
+      "ar": "فول مدمس مع الليمون والثوم وزيت الزيتون"
+    },
+    "price": 14,
+    "category": "breakfast",
+    "image": "/images/foul-mdammas.jpg"
+  },
+  {
+    "id": "sunny-side-up-eggs",
+    "name": {
+      "en": "Sunny Side Up Eggs",
+      "ka": "მზეზე შემწვარი კვერცხი",
+      "ru": "Яичница глазунья",
+      "ar": "بيض مقلي"
+    },
+    "description": {
+      "en": "Fried eggs with crispy edges and runny yolk",
+      "ka": "შემწვარი კვერცხი ხრაშუნა კიდეებით",
+      "ru": "Жареные яйца с хрустящими краями и жидким желтком",
+      "ar": "بيض مقلي مع حواف مقرشة"
+    },
+    "price": 10,
+    "category": "breakfast",
+    "image": "/images/sunny-side-up-eggs.jpg"
+  },
+  {
+    "id": "season-salad",
+    "name": {
+      "en": "Season Salad",
+      "ka": "სეზონის სალათი",
+      "ru": "Сезонный салат",
+      "ar": "سلطة موسمية"
+    },
+    "description": {
+      "en": "Fresh seasonal vegetables with olive oil dressing",
+      "ka": "ახალი სეზონური ბოსტნეული ზეითუნის ზეთით",
+      "ru": "Свежие сезонные овощи с заправкой из оливкового масла",
+      "ar": "خضروات موسمية طازجة مع صلصة زيت الزيتون"
+    },
+    "price": 12,
+    "category": "salad",
+    "image": "/images/season-salad.jpg"
+  },
+  {
+    "id": "manakish-cheese",
+    "name": {
+      "en": "Manakish Saj - Cheese",
+      "ka": "მანაქიში - ყველი",
+      "ru": "Манакиш - Сыр",
+      "ar": "مناقيش صاج - جبنة"
+    },
+    "description": {
+      "en": "Saj bread topped with melted akkawi cheese",
+      "ka": "საჯ პური გამდნარი აკავის ყველით",
+      "ru": "Садж хлеб с плавленым сыром аккави",
+      "ar": "خبز صاج مع جبن عكاوي مذاب"
+    },
+    "price": 13,
+    "category": "manakish",
+    "image": "/images/manakish-cheese.jpg"
+  },
+  {
+    "id": "manakish-kafta-cheese",
+    "name": {
+      "en": "Manakish Saj - Kafta & Cheese",
+      "ka": "მანაქიში - ქაფთა და ყველი",
+      "ru": "Манакиш - Кафта и сыр",
+      "ar": "مناقيش صاج - كفتة وجبنة"
+    },
+    "description": {
+      "en": "Saj bread with spiced kafta meat and melted cheese",
+      "ka": "საჯ პური ცხარე ქაფთას ხორცით და გამდნარი ყველით",
+      "ru": "Садж хлеб с пряным мясом кафта и плавленым сыром",
+      "ar": "خبز صاج مع كفتة متبلة وجبن ذائب"
+    },
+    "price": 19,
+    "category": "manakish",
+    "image": "/images/manakish-kafta-cheese.jpg"
+  },
+  {
+    "id": "labne-saj",
+    "name": {
+      "en": "Labne Saj",
+      "ka": "ლაბნე საჯი",
+      "ru": "Лабне садж",
+      "ar": "لبنة صاج"
+    },
+    "description": {
+      "en": "Saj bread with creamy labne cheese and olive oil",
+      "ka": "საჯ პური კრემისებრი ლაბნე ყველით და ზეითუნის ზეთით",
+      "ru": "Садж хлеб с кремовым сыром лабне и оливковым маслом",
+      "ar": "خبز صاج مع لبنة كريمية وزيت الزيتون"
+    },
+    "price": 12,
+    "category": "manakish",
+    "image": "/images/labne-saj.jpg"
+  },
+  {
+    "id": "lahm-b-ajin",
+    "name": {
+      "en": "Lahm B Ajin",
+      "ka": "ლაჰმ ბ აჯინი",
+      "ru": "Лахм бидждин",
+      "ar": "لحم بعجين"
+    },
+    "description": {
+      "en": "Saj bread with spiced minced lamb, tomatoes, and onions",
+      "ka": "საჯ პური ცხარე ცხვრის ფარშით, პომიდვრით და ხახვით",
+      "ru": "Садж хлеб с пряным фаршем из баранины, помидорами и луком",
+      "ar": "خبز صاج مع لحم ضأن مفلفل متبل وطماطم وبصل"
+    },
+    "price": 13,
+    "category": "manakish",
+    "image": "/images/lahm-b-ajin.jpg"
+  },
+  {
+    "id": "soujouk-cheese",
+    "name": {
+      "en": "Manakish Saj - Soujouk & Cheese",
+      "ka": "მანაქიში - სუჯუხი და ყველი",
+      "ru": "Манакиш - Суджук и сыр",
+      "ar": "مناقيش صاج - سجق وجبنة"
+    },
+    "description": {
+      "en": "Saj bread with spicy soujouk sausage and melted cheese",
+      "ka": "საჯ პური ცხარე სუჯუხის ძეხვით და გამდნარი ყველით",
+      "ru": "Садж хлеб с острой колбасой суджук и плавленым сыром",
+      "ar": "خبز صاج مع سجق حار وجبن ذائب"
+    },
+    "price": 19,
+    "category": "manakish",
+    "image": "/images/soujouk-cheese.jpg"
+  },
+  {
+    "id": "zaatar",
+    "name": {
+      "en": "Manakish Saj - Zaatar (Thyme)",
+      "ka": "მანაქიში - ზაათარი (თიმი)",
+      "ru": "Манакиш - Заатар (тимьян)",
+      "ar": "مناقيش صاج - زعتر"
+    },
+    "description": {
+      "en": "Traditional saj bread with zaatar, olive oil, and sesame",
+      "ka": "ტრადიციული საჯ პური აათარით, ზეითუნის ზეთით და სეზამით",
+      "ru": "Традиционный садж хлеб с заатаром, оливковым маслом и кунжутом",
+      "ar": "خبز صاج تقليدي بالزعتر وزيت الزيتون والسمسم"
+    },
+    "price": 10,
+    "category": "manakish",
+    "image": "/images/zaatar.jpg"
+  },
+  {
+    "id": "kishk",
+    "name": {
+      "en": "Kishk",
+      "ka": "კიშიკი",
+      "ru": "Кишк",
+      "ar": "كشك"
+    },
+    "description": {
+      "en": "Saj bread with fermented yogurt and bulgur mixture",
+      "ka": "საჯ პური ფერმენტირებული იოგურტის და ბულგურის ნარევით",
+      "ru": "Садж хлеб с ферментированным йогуртом и булгуром",
+      "ar": "خبز صاج مع خليط اللبن المتخمر والبرغل"
+    },
+    "price": 15,
+    "category": "manakish",
+    "image": "/images/kishk.jpg"
+  },
+  {
+    "id": "labneh-honey",
+    "name": {
+      "en": "Labneh and Honey (Ish El Belbol)",
+      "ka": "ლაბნე და თაფლი (იშ ელ ბელბოლ)",
+      "ru": "Лабне с мёдом (Иш эль бельболь)",
+      "ar": "لبنة وعسل (عش البلبل)"
+    },
+    "description": {
+      "en": "Creamy labne drizzled with honey and topped with pistachios",
+      "ka": "კრემისებრი აბნე თაფლით და ფისტებით",
+      "ru": "Кремовый лабне с мёдом и фисташками",
+      "ar": "لبنة كريمية مع العسل والفستق"
+    },
+    "price": 15,
+    "category": "manakish",
+    "image": "/images/labneh-honey.jpg"
+  },
+  {
+    "id": "baba-ghanoush",
+    "name": {
+      "en": "Baba Ghanoush",
+      "ka": "ბაბა განუში",
+      "ru": "Баба гануш",
+      "ar": "بابا غنوج"
+    },
+    "description": {
+      "en": "Smoky roasted eggplant dip with tahini and garlic",
+      "ka": "მოწვეული ბადრიჯნის პასტა ტაინით და ნიორით",
+      "ru": "Копчёный баклажановый дип с тахини и чесноком",
+      "ar": "باذنجان مشوي مدخن مع الطحينة والثوم"
+    },
+    "price": 14,
+    "category": "appetizers",
+    "image": "/images/baba-ghanoush.jpg"
+  },
+  {
+    "id": "eggs-soujouk",
+    "name": {
+      "en": "Eggs & Soujouk",
+      "ka": "კვერცხი და სუჯუხი",
+      "ru": "Яйца с суджуком",
+      "ar": "بيض وسجق"
+    },
+    "description": {
+      "en": "Scrambled eggs with spicy soujouk sausage",
+      "ka": "ამოთქმული კვერცხი ცხარე სუჯუხის ძეხვით",
+      "ru": "Яичница с острой колбасой суджук",
+      "ar": "بيض مخفوق مع سجق حار"
+    },
+    "price": 16,
+    "category": "appetizers",
+    "image": "/images/eggs-soujouk.jpg"
+  },
+  {
+    "id": "french-fries",
+    "name": {
+      "en": "French Fries",
+      "ka": "კარტოფილი ფრი",
+      "ru": "Картофель фри",
+      "ar": "بطاطا مقلية"
+    },
+    "description": {
+      "en": "Crispy golden fries with salt",
+      "ka": "ხრაშუნა ოქროსფერი კარტოფილი ფრი მარილით",
+      "ru": "Хрустящий золотистый картофель фри с солью",
+      "ar": "بطاطا مقلية مقرشة مع الملح"
+    },
+    "price": 8,
+    "category": "appetizers",
+    "image": "/images/french-fries.jpg"
+  },
+  {
+    "id": "hummus",
+    "name": {
+      "en": "Hummus",
+      "ka": "უმუსი",
+      "ru": "Хумус",
+      "ar": "حمص"
+    },
+    "description": {
+      "en": "Creamy chickpea dip with tahini, lemon, and garlic",
+      "ka": "კრემისებრი ნუტის პასტა ტაჰინით, ლიმონით და ნიორით",
+      "ru": "Кремовый соус из нута с тахини, лимоном и чесноком",
+      "ar": "حمص كريمي مع الطحينة والليمون والثوم"
+    },
+    "price": 14,
+    "category": "appetizers",
+    "image": "/images/hummus.jpg"
+  },
+  {
+    "id": "labne-plate",
+    "name": {
+      "en": "Labne Plate",
+      "ka": "ლაბნეს თეფში",
+      "ru": "Тарелка лабне",
+      "ar": "طبق لبنة"
+    },
+    "description": {
+      "en": "Creamy labne cheese with olive oil and zaatar",
+      "ka": "კრემისებრი ლაბნე ყველი ზეითუნის ზეთით და ზაათარით",
+      "ru": "Кремовый сыр лабне с оливковым маслом и заатаром",
+      "ar": "لبنة كريمية مع زيت الزيتون والزعتر"
+    },
+    "price": 13,
+    "category": "appetizers",
+    "image": "/images/labne-plate.jpg"
+  },
+  {
+    "id": "shakchouka",
+    "name": {
+      "en": "Shakchouka",
+      "ka": "შაქშუკა",
+      "ru": "Шакшука",
+      "ar": "شكشوكة"
+    },
+    "description": {
+      "en": "Eggs poached in spicy tomato sauce with peppers",
+      "ka": "კვერცხი ცხარე პომიდვრის სოუსში წიწაკით",
+      "ru": "Яйца, приготовленные в остром томатном соусе с перцем",
+      "ar": "بيض مطبوخ في صلصة طماطم حارة مع الفلفل"
+    },
+    "price": 15,
+    "category": "appetizers",
+    "image": "/images/shakchouka.jpg"
+  },
+  {
+    "id": "hummus-meat",
+    "name": {
+      "en": "Hummus with Meat",
+      "ka": "ჰუმუსი ხორცით",
+      "ru": "Хумус с мясом",
+      "ar": "حمص باللحم"
+    },
+    "description": {
+      "en": "Creamy hummus topped with spiced minced lamb",
+      "ka": "კრემისებრი ჰუმუსი ცხარე ცხვრის ფარშით",
+      "ru": "Кремовый хумус с пряным фаршем из баранины",
+      "ar": "حمص كريمي مع لحم ضأن مفلفل متبل"
+    },
+    "price": 18,
+    "category": "appetizers",
+    "image": "/images/hummus-meat.jpg"
+  },
+  {
+    "id": "batata-harra",
+    "name": {
+      "en": "Batata Harra",
+      "ka": "ცხარე კარტოფილი",
+      "ru": "Батата харра",
+      "ar": "بطاطا حرة"
+    },
+    "description": {
+      "en": "Spicy fried potatoes with garlic, cilantro, and chili",
+      "ka": "ცხარე შემწვარი კარტოფილი ნიორით, ქინძით და ჩილით",
+      "ru": "Острая жареная картошка с чесноком, кинзой и чили",
+      "ar": "بطاطا مقلية حارة مع الثوم والكزبرة والفلفل الحار"
+    },
+    "price": 15,
+    "category": "appetizers",
+    "image": "/images/batata-harra.jpg"
+  },
+  {
+    "id": "chicken-shawarma-platter",
+    "name": {
+      "en": "Chicken Shawarma Platter",
+      "ka": "ქათმის შაურმას თეფში",
+      "ru": "Тарелка куриной шаурмы",
+      "ar": "طبق شاورما الدجاج"
+    },
+    "description": {
+      "en": "Marinated chicken shawarma with rice, salad, and garlic sauce",
+      "ka": "მარინირებული ქათმის შაურმა ბრინჯით, სალათით და ნივრის სოუსით",
+      "ru": "Маринованная куриная шаурма с рисом, салатом и чесночным соусом",
+      "ar": "شاورما دجاج متبلة مع الأرز والسلطة وصلصة الثوم"
+    },
+    "price": 24,
+    "category": "main",
+    "image": "/images/chicken-shawarma-platter.jpg"
+  },
+  {
+    "id": "kafta-platter",
+    "name": {
+      "en": "Kafta Platter",
+      "ka": "ქაფთას თეფში",
+      "ru": "Тарелка кафта",
+      "ar": "طبق كفتة"
+    },
+    "description": {
+      "en": "Grilled spiced kafta meatballs with rice and grilled vegetables",
+      "ka": "გრილზე მომზადებული ცხარე ქაფთას ბურთულები ბრინჯით და გრილზე მომზადებული ბოსტნეულით",
+      "ru": "Жареные на гриле пряные фрикадельки кафта с рисом и овощами гриль",
+      "ar": "كرات كفتة متبلة مشوية مع الأرز والخضروات المشوية"
+    },
+    "price": 28,
+    "category": "main",
+    "image": "/images/kafta-platter.jpg"
+  },
+  {
+    "id": "meat-shawarma-platter",
+    "name": {
+      "en": "Meat Shawarma Platter",
+      "ka": "ხორცის შაურმას თეფში",
+      "ru": "Тарелка мясной шаурмы",
+      "ar": "طبق شاورما اللحم"
+    },
+    "description": {
+      "en": "Marinated beef shawarma with rice, salad, and tahini sauce",
+      "ka": "მარინირებული საქონლის შაურმა ბრინჯით, სალათით და ტაჰინის სოუსით",
+      "ru": "Маринованная говяжья шаурма с рисом, салатом и соусом тахини",
+      "ar": "شاورما لحم بقري متبلة مع الأرز والسلطة وصلصة الطحينة"
+    },
+    "price": 35,
+    "category": "main",
+    "image": "/images/meat-shawarma-platter.jpg"
+  },
+  {
+    "id": "tawook-platter",
+    "name": {
+      "en": "Tawook Platter",
+      "ka": "ტავუქის თეფში",
+      "ru": "Тарелка тавук",
+      "ar": "طبق دجاج الطاووق"
+    },
+    "description": {
+      "en": "Marinated chicken skewers with rice, garlic sauce, and grilled vegetables",
+      "ka": "მარინირებული ქათმის შამფურები ბრინჯით, ნივრის სოუსით და გრილზე მომზადებული ბოსტნეულით",
+      "ru": "Маринованные куриные шашлыки с рисом, чесночным соусом и овощами гриль",
+      "ar": "أسياخ دجاج متبلة مع الأرز وصلصة الثوم والخضروات المشوية"
+    },
+    "price": 26,
+    "category": "main",
+    "image": "/images/tawook-platter.jpg"
+  },
+  {
+    "id": "chicken-shawarma-wrap",
+    "name": {
+      "en": "Chicken Shawarma Wrap",
+      "ka": "ქათმის შაურმას როლი",
+      "ru": "Ролл куриная шаурма",
+      "ar": "شاورما دجاج راب"
+    },
+    "description": {
+      "en": "Chicken shawarma wrapped in saj bread with vegetables and garlic sauce",
+      "ka": "ქათმის შაურმა საჯ პურში ბოსტნეულით და ნივრის სოუსით",
+      "ru": "Куриная шаурма в садж хлебе с овощами и чесночным соусом",
+      "ar": "شاورما دجاج ملفوفة في خبز الصاج مع الخضروات وصلصة الثوم"
+    },
+    "price": 14,
+    "category": "sandwiches",
+    "image": "/images/chicken-shawarma-wrap.jpg"
+  },
+  {
+    "id": "fajita-wrap",
+    "name": {
+      "en": "Fajita Wrap",
+      "ka": "ფახიტას როლი",
+      "ru": "Ролл фахита",
+      "ar": "فاهيتا راب"
+    },
+    "description": {
+      "en": "Grilled chicken or beef with peppers and onions in saj bread",
+      "ka": "გრილზე მომზადებული ქათამი ან საქონელი წიწაკით და ხახვით საჯ პურში",
+      "ru": "Жареная курица или говядина с перцем и луком в садж хлебе",
+      "ar": "دجاج أو لحم بقري مشوي مع الفلفل والبصل في خبز الصاج"
+    },
+    "price": 15,
+    "category": "sandwiches",
+    "image": "/images/fajita-wrap.jpg"
+  },
+  {
+    "id": "kafta-wrap",
+    "name": {
+      "en": "Kafta Wrap",
+      "ka": "ქაფთას როლი",
+      "ru": "Ролл кафта",
+      "ar": "كفتة راب"
+    },
+    "description": {
+      "en": "Grilled kafta meat with vegetables and tahini in saj bread",
+      "ka": "გრილზე მომზადებული ქაფთას ხორცი ბოსტნეულით და ტაჰინით საჯ პურში",
+      "ru": "Жареное мясо кафта с овощами и тахини в садж хлебе",
+      "ar": "كفتة مشوية مع الخضروات والطحينة في خبز الصاج"
+    },
+    "price": 16,
+    "category": "sandwiches",
+    "image": "/images/kafta-wrap.jpg"
+  },
+  {
+    "id": "meat-shawarma-wrap",
+    "name": {
+      "en": "Meat Shawarma Wrap",
+      "ka": "ხორცის შაურმას როლი",
+      "ru": "Ролл мясная шаурма",
+      "ar": "شاورما لحم راب"
+    },
+    "description": {
+      "en": "Beef shawarma wrapped in saj bread with vegetables and tahini",
+      "ka": "საქონლის შაურმა საჯ პურში ბოსტნეულით და ტაჰინით",
+      "ru": "Говяжья шаурма в садж хлебе с овощами и тахини",
+      "ar": "شاورما لحم بقري ملفوفة في خبز الصاج مع الخضروات والطحينة"
+    },
+    "price": 18,
+    "category": "sandwiches",
+    "image": "/images/meat-shawarma-wrap.jpg"
+  },
+  {
+    "id": "soujouk-wrap",
+    "name": {
+      "en": "Soujouk Wrap",
+      "ka": "სუჯუხის როლი",
+      "ru": "Ролл суджук",
+      "ar": "سجق راب"
+    },
+    "description": {
+      "en": "Spicy soujouk sausage with vegetables in saj bread",
+      "ka": "ცხარე სუჯუხის ძეხვი ბოსტნეულით საჯ პურში",
+      "ru": "Острая колбаса суджук с овощами в садж хлебе",
+      "ar": "سجق حار مع الخضروات في خبز الصاج"
+    },
+    "price": 16,
+    "category": "sandwiches",
+    "image": "/images/soujouk-wrap.jpg"
+  },
+  {
+    "id": "tawook-wrap",
+    "name": {
+      "en": "Tawook Wrap",
+      "ka": "ტავუქის როლი",
+      "ru": "Ролл тавук",
+      "ar": "دجاج طاووق راب"
+    },
+    "description": {
+      "en": "Marinated chicken tawook with vegetables and garlic sauce in saj bread",
+      "ka": "მარინირებული ქათამი ტავუქი ბოსტნეულით და ნივრის სოუსით საჯ პურში",
+      "ru": "Маринованная курица тавук с овощами и чесночным соусом в садж хлебе",
+      "ar": "دجاج طاووق متبل مع الخضروات وصلصة الثوم في خبز الصاج"
+    },
+    "price": 15,
+    "category": "sandwiches",
+    "image": "/images/tawook-wrap.jpg"
+  },
+  {
+    "id": "chicken-alfredo-pasta",
+    "name": {
+      "en": "Chicken Alfredo Pasta",
+      "ka": "ქათმის ალფრედოს პასტა",
+      "ru": "Паста альфредо с курицей",
+      "ar": "باستا دجاج ألفريدو"
+    },
+    "description": {
+      "en": "Creamy alfredo pasta with grilled chicken and parmesan",
+      "ka": "კრემისებრი ალფრედოს პასტა გრილზე მომზადებული ქათმით და პარმეზანით",
+      "ru": "Кремовая паста альфредо с жареной курицей и пармезаном",
+      "ar": "باستا ألفريدو كريمية مع دجاج مشوي وجبن بارميزان"
+    },
+    "price": 24,
+    "category": "pasta",
+    "image": "/images/chicken-alfredo-pasta.jpg"
+  },
+  {
+    "id": "penne-arabiata",
+    "name": {
+      "en": "Penne Arabiata",
+      "ka": "პენე არაბიატა",
+      "ru": "Пенне аррабиата",
+      "ar": "بيني أرابياتا"
+    },
+    "description": {
+      "en": "Penne pasta in spicy tomato sauce with garlic and chili",
+      "ka": "პენე პასტა ცხარე პომიდვრის სოუსში ნიორით და ჩილით",
+      "ru": "Паста пенне в остром томатном соусе с чесноком и чили",
+      "ar": "بيني في صلصة طماطم حارة مع الثوم والفلفل الحار"
+    },
+    "price": 18,
+    "category": "pasta",
+    "image": "/images/penne-arabiata.jpg"
+  },
+  {
+    "id": "beer",
+    "name": {
+      "en": "Beer",
+      "ka": "ლუდი",
+      "ru": "Пиво",
+      "ar": "بيرة"
+    },
+    "description": {
+      "en": "Cold local or imported beer",
+      "ka": "ცივი ადგილობრივი ან იმპორტირებული ლუდი",
+      "ru": "Холодное местное или импортное пиво",
+      "ar": "بيرة محلية أو مستوردة باردة"
+    },
+    "price": 7,
+    "category": "beverages",
+    "image": "/images/beer.jpg"
+  },
+  {
+    "id": "black-tea",
+    "name": {
+      "en": "Black Tea",
+      "ka": "შავი ჩაი",
+      "ru": "Чёрный чай",
+      "ar": "شاي أسود"
+    },
+    "description": {
+      "en": "Traditional black tea served hot",
+      "ka": "ტრადიციული შავი ჩაი ცხელი",
+      "ru": "Традиционный чёрный чай, подаётся горячим",
+      "ar": "شاي أسود تقليدي ساخن"
+    },
+    "price": 3,
+    "category": "beverages",
+    "image": "/images/black-tea.jpg"
+  },
+  {
+    "id": "coffee",
+    "name": {
+      "en": "Coffee",
+      "ka": "ყავა",
+      "ru": "Кофе",
+      "ar": "قهوة"
+    },
+    "description": {
+      "en": "Freshly brewed coffee",
+      "ka": "ახლად მომზადებული ყავა",
+      "ru": "Свежесваренный кофе",
+      "ar": "قهوة طازجة"
+    },
+    "price": 4,
+    "category": "beverages",
+    "image": "/images/coffee.jpg"
+  },
+  {
+    "id": "coffee-rakwa",
+    "name": {
+      "en": "Coffee (Rakwa)",
+      "ka": "ყავა (რაქვა)",
+      "ru": "Кофе (раква)",
+      "ar": "قهوة (ركوة)"
+    },
+    "description": {
+      "en": "Traditional Arabic coffee brewed in rakwa with cardamom",
+      "ka": "ტრადიციული არაბული ყავა რაქვაში ჯავზით",
+      "ru": "Традиционный арабский кофе, сваренный в ракве с кардамоном",
+      "ar": "قهوة عربية تقليدية محضرة في الركوة مع الهيل"
+    },
+    "price": 9,
+    "category": "beverages",
+    "image": "/images/coffee-rakwa.jpg"
+  },
+  {
+    "id": "ice-tea",
+    "name": {
+      "en": "Ice Tea",
+      "ka": "აის თი",
+      "ru": "Айс ти",
+      "ar": "شاي مثلج"
+    },
+    "description": {
+      "en": "Refreshing iced tea with lemon",
+      "ka": "გამაგრილებელი ცივი ჩაი ლიმონით",
+      "ru": "Освежающий холодный чай с лимоном",
+      "ar": "شاي مثلج منعش مع الليمون"
+    },
+    "price": 5,
+    "category": "beverages",
+    "image": "/images/ice-tea.jpg"
+  },
+  {
+    "id": "soft-drinks",
+    "name": {
+      "en": "Soft Drinks",
+      "ka": "გაზიანი სასმელები",
+      "ru": "Газированные напитки",
+      "ar": "مشروبات غازية"
+    },
+    "description": {
+      "en": "Coca-Cola, Fanta, Sprite",
+      "ka": "კოკა-კოლა, ფანტა, სპრაიტი",
+      "ru": "Кока-Кола, Фанта, Спрайт",
+      "ar": "كوكا كولا، فانتا، سبرايت"
+    },
+    "price": 3,
+    "category": "beverages",
+    "image": "/images/soft-drinks.jpg"
+  },
+  {
+    "id": "water",
+    "name": {
+      "en": "Water",
+      "ka": "წყალი",
+      "ru": "Вода",
+      "ar": "ماء"
+    },
+    "description": {
+      "en": "Still or sparkling water",
+      "ka": "უgazო ან gazიანი წყალი",
+      "ru": "Негазированная или газированная вода",
+      "ar": "ماء عادي أو فوار"
+    },
+    "price": 2,
+    "category": "beverages",
+    "image": "/images/water.jpg"
+  },
+  {
+    "id": "laban-ayran",
+    "name": {
+      "en": "Laban Ayran",
+      "ka": "მაწონი აირანი",
+      "ru": "Лабан айран",
+      "ar": "لبن عيران"
+    },
+    "description": {
+      "en": "Traditional yogurt drink with salt",
+      "ka": "ტრადიციული მაწონის სასმელი მარილით",
+      "ru": "Традиционный йогуртовый напиток с солью",
+      "ar": "مشروب لبن تقليدي مع الملح"
+    },
+    "price": 5,
+    "category": "beverages",
+    "image": "/images/laban-ayran.jpg"
+  }
 ]

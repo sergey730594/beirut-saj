@@ -1,9 +1,24 @@
 export const ka = {
   nav: { menu: 'მენიუ', about: 'ჩვენ შესახებ', location: 'მდებარეობა', contact: 'კონტაქტი' },
   hero: { title: 'ბეირუთ საჯ ინტერნეიშენალ რესტორანი', subtitle: 'ავთენტიკური ლიბანური სამზარეულო თბილისში', cta: 'მენიუს ნახვა' },
-  menu: { title: 'ჩვენი მენიუ', search: 'კერძების ძიება...', categories: { all: 'ყველა', coldMeze: 'ცივი მეზე', hotMeze: 'ცხელი მეზე', sajBread: 'საჯ პური და მანაეში', grills: 'გრილი და მთავარი კერძები', desserts: 'დესერტები', beverages: 'სასმელები' }, addToCart: 'კალათაში დამატება' },
+  menu: {
+    title: 'ჩვენი მენიუ',
+    search: 'კერძების ძიება...',
+    categories: {
+      all: 'ყველა',
+      breakfast: 'საუზმე',
+      manakish: 'მანაქიში საჯი',
+      appetizers: 'აპეტაიზერები',
+      main: 'მთავარი კერძი',
+      sandwiches: 'სენდვიჩები',
+      pasta: 'პასტა',
+      salad: 'სალათი',
+      beverages: 'სასმელები'
+    },
+    addToCart: 'კალათაში დამატება'
+  },
   cart: { title: 'თქვენი შეკვეთა', empty: 'კალათა ცარიელია', total: 'ჯამი', checkout: 'შეკვეთა', remove: 'წაშლა' },
-  order: { title: 'შეავსეთ შეკვეთა', name: 'თქვენი სახელი', phone: 'ტელეფონი', address: 'მისამართი', notes: 'შენიშვნები', sendWhatsApp: 'WhatsApp-ით გაგზავნა', sendEmail: 'ელფოსტით გაგზავნა' },
+  order: { title: 'შეავსეთ შეკვეთა', name: 'თქვენი სახელი', phone: 'ტელეფონი', address: 'მისამართი', notes: 'შენიშვნები', sendWhatsApp: 'WhatsApp-ით გაგზავნა', sendEmail: 'ელფოსტით გაგზავნა', or: 'ან' },
   about: { title: 'ჩვენ შესახებ', description: 'ლიბანის მდიდარი არომატები ხვდება საქართველოს თბილ სტუმართმოყვარეობას. ავთენტიკური რეცეპტები ბეირუთიდან.' },
   location: { title: 'მოგვძებნეთ', address: 'აღმაშენებლის გამზირი 109, თბილისი', hours: 'ყოველდღე: 11:00 - 23:00' },
   footer: { rights: 'ყველა უფლება დაცულია', madeWith: 'შექმნილია' }
