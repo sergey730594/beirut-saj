@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream-50 text-charcoal-900 font-sans antialiased;
+  }
+  html[dir="rtl"] {
+    font-family: 'Noto Sans Arabic', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent;
+  }
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-cream-100; }
+::-webkit-scrollbar-thumb { @apply bg-gold-400 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-gold-500; }
+
+/* Мобильная адаптация */
+@media (max-width: 640px) {
+  .order-modal-container {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+  }
+
+  .order-modal-content {
+    border-radius: 0;
+    height: 100%;
+  }
+}
+
+/* Скрываем scrollbar но оставляем прокрутку */
+.order-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.order-modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.order-modal-body::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+
+.order-modal-body::-webkit-scrollbar-thumb:hover {
+  background: #d4a012;
+}
