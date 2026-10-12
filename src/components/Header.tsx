@@ -32,10 +32,10 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
   }, []);
 
   const languages = [
-    { code: 'en' as Language, label: 'English', dir: 'ltr' as const },
-    { code: 'ka' as Language, label: 'ქართული', dir: 'ltr' as const },
-    { code: 'ru' as Language, label: 'Русский', dir: 'ltr' as const },
-    { code: 'ar' as Language, label: 'العربية', dir: 'rtl' as const },
+    { code: 'en' as Language, label: 'EN', fullLabel: 'English', dir: 'ltr' as const },
+    { code: 'ka' as Language, label: 'KA', fullLabel: 'ქართული', dir: 'ltr' as const },
+    { code: 'ru' as Language, label: 'RU', fullLabel: 'Русский', dir: 'ltr' as const },
+    { code: 'ar' as Language, label: 'AR', fullLabel: 'العربية', dir: 'rtl' as const },
   ];
 
   function handleLangChange(l: Language) {
@@ -90,16 +90,17 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
             ))}
           </nav>
 
-          <div className="flex items-center gap-3" ref={mobileMenuRef}>
-            <div className="relative hidden sm:block" ref={langDropdownRef}>
+          <div className="flex items-center gap-2 md:gap-3" ref={mobileMenuRef}>
+            {/* Языковой переключатель - виден всегда */}
+            <div className="relative" ref={langDropdownRef}>
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
                   setLangDropdownOpen(!langDropdownOpen);
                 }} 
-                className="flex items-center gap-2 text-charcoal-800 hover:text-gold-600 px-3 py-2 rounded-lg hover:bg-cream-100 transition-colors"
+                className="flex items-center gap-1 md:gap-2 text-charcoal-800 hover:text-gold-600 px-2 md:px-3 py-2 rounded-lg hover:bg-cream-100 transition-colors text-sm md:text-base"
               >
-                <span className="uppercase font-semibold text-sm">{lang}</span>
+                <span className="uppercase font-bold">{lang}</span>
               </button>
               <AnimatePresence>
                 {langDropdownOpen && (
@@ -108,7 +109,7 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
                     animate={{ opacity: 1, y: 0 }} 
                     exit={{ opacity: 0, y: 10 }} 
                     transition={{ duration: 0.15 }}
-                    className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50"
+                    className="absolute right-0 mt-2 w-36 md:w-40 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50"
                   >
                     {languages.map((l) => (
                       <button 
@@ -117,11 +118,11 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
                           e.stopPropagation();
                           handleLangChange(l.code);
                         }} 
-                        className={`w-full text-left px-4 py-2 hover:bg-cream-100 rtl:text-right transition-colors ${
+                        className={`w-full text-left px-3 md:px-4 py-2 hover:bg-cream-100 rtl:text-right transition-colors text-sm ${
                           lang === l.code ? 'bg-cream-100 font-semibold text-gold-600' : 'text-charcoal-800'
                         }`}
                       >
-                        {l.label}
+                        {l.fullLabel}
                       </button>
                     ))}
                   </motion.div>
@@ -134,7 +135,7 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
               className="relative p-2 text-charcoal-800 hover:text-gold-600 hover:bg-cream-100 rounded-lg transition-colors"
               aria-label="Cart"
             >
-              <ShoppingCart size={24} />
+              <ShoppingCart size={22} />
               {cartCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-gold-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   {cartCount}
@@ -180,24 +181,6 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
                   {translations.nav[link.key]}
                 </a>
               ))}
-              <div className="pt-3 border-t border-gray-100">
-                <p className="text-sm text-gray-500 mb-2">Language</p>
-                <div className="flex flex-wrap gap-2">
-                  {languages.map((l) => (
-                    <button 
-                      key={l.code} 
-                      onClick={() => handleLangChange(l.code)} 
-                      className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
-                        lang === l.code 
-                          ? 'bg-gold-500 text-white' 
-                          : 'bg-cream-100 text-charcoal-800 hover:bg-cream-200'
-                      }`}
-                    >
-                      {l.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
           </motion.div>
         )}
