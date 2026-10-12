@@ -15,6 +15,7 @@
     },
     "price": 15,
     "category": "salad",
+    "popular": true,
     "image": "/images/tabbouleh.jpg"
   },
   {
@@ -33,6 +34,7 @@
     },
     "price": 15,
     "category": "salad",
+    "popular": true,
     "image": "/images/fattouch.jpg"
   },
   {
@@ -51,6 +53,7 @@
     },
     "price": 12,
     "category": "breakfast",
+    "popular": true,
     "image": "/images/omelette.jpg"
   },
   {
@@ -69,6 +72,7 @@
     },
     "price": 18,
     "category": "breakfast",
+    "popular": true,
     "image": "/images/fatteh.jpg"
   },
   {
@@ -87,6 +91,7 @@
     },
     "price": 15,
     "category": "breakfast",
+    "popular": true,
     "image": "/images/falafel-plate.jpg"
   },
   {
@@ -105,6 +110,7 @@
     },
     "price": 10,
     "category": "sandwiches",
+    "popular": true,
     "image": "/images/falafel-wrap.jpg"
   },
   {
@@ -123,6 +129,7 @@
     },
     "price": 14,
     "category": "breakfast",
+    "popular": true,
     "image": "/images/foul-mdammas.jpg"
   },
   {
@@ -141,6 +148,7 @@
     },
     "price": 10,
     "category": "breakfast",
+    "popular": true,
     "image": "/images/sunny-side-up-eggs.jpg"
   },
   {
@@ -159,6 +167,7 @@
     },
     "price": 12,
     "category": "salad",
+    "popular": true,
     "image": "/images/season-salad.jpg"
   },
   {
@@ -177,6 +186,7 @@
     },
     "price": 13,
     "category": "manakish",
+    "popular": false,
     "image": "/images/manakish-cheese.jpg"
   },
   {
@@ -195,6 +205,7 @@
     },
     "price": 19,
     "category": "manakish",
+    "popular": false,
     "image": "/images/manakish-kafta-cheese.jpg"
   },
   {
@@ -213,6 +224,7 @@
     },
     "price": 12,
     "category": "manakish",
+    "popular": false,
     "image": "/images/labne-saj.jpg"
   },
   {
@@ -231,6 +243,7 @@
     },
     "price": 13,
     "category": "manakish",
+    "popular": false,
     "image": "/images/lahm-b-ajin.jpg"
   },
   {
@@ -249,6 +262,7 @@
     },
     "price": 19,
     "category": "manakish",
+    "popular": false,
     "image": "/images/soujouk-cheese.jpg"
   },
   {
@@ -267,6 +281,7 @@
     },
     "price": 10,
     "category": "manakish",
+    "popular": false,
     "image": "/images/zaatar.jpg"
   },
   {
@@ -285,6 +300,7 @@
     },
     "price": 15,
     "category": "manakish",
+    "popular": false,
     "image": "/images/kishk.jpg"
   },
   {
@@ -303,6 +319,7 @@
     },
     "price": 15,
     "category": "manakish",
+    "popular": false,
     "image": "/images/labneh-honey.jpg"
   },
   {
@@ -321,6 +338,7 @@
     },
     "price": 14,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/baba-ghanoush.jpg"
   },
   {
@@ -339,6 +357,7 @@
     },
     "price": 16,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/eggs-soujouk.jpg"
   },
   {
@@ -357,6 +376,7 @@
     },
     "price": 8,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/french-fries.jpg"
   },
   {
@@ -375,6 +395,7 @@
     },
     "price": 14,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/hummus.jpg"
   },
   {
@@ -393,6 +414,7 @@
     },
     "price": 13,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/labne-plate.jpg"
   },
   {
@@ -411,6 +433,7 @@
     },
     "price": 15,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/shakchouka.jpg"
   },
   {
@@ -429,6 +452,7 @@
     },
     "price": 18,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/hummus-meat.jpg"
   },
   {
@@ -447,6 +471,7 @@
     },
     "price": 15,
     "category": "appetizers",
+    "popular": false,
     "image": "/images/batata-harra.jpg"
   },
   {
@@ -465,6 +490,7 @@
     },
     "price": 24,
     "category": "main",
+    "popular": false,
     "image": "/images/chicken-shawarma-platter.jpg"
   },
   {
@@ -483,6 +509,7 @@
     },
     "price": 28,
     "category": "main",
+    "popular": false,
     "image": "/images/kafta-platter.jpg"
   },
   {
@@ -501,6 +528,7 @@
     },
     "price": 35,
     "category": "main",
+    "popular": false,
     "image": "/images/meat-shawarma-platter.jpg"
   },
   {
@@ -519,6 +547,7 @@
     },
     "price": 26,
     "category": "main",
+    "popular": false,
     "image": "/images/tawook-platter.jpg"
   },
   {
@@ -537,6 +566,7 @@
     },
     "price": 14,
     "category": "sandwiches",
+    "popular": false,
     "image": "/images/chicken-shawarma-wrap.jpg"
   },
   {
@@ -555,6 +585,7 @@
     },
     "price": 15,
     "category": "sandwiches",
+    "popular": false,
     "image": "/images/fajita-wrap.jpg"
   },
   {
@@ -573,6 +604,7 @@
     },
     "price": 16,
     "category": "sandwiches",
+    "popular": false,
     "image": "/images/kafta-wrap.jpg"
   },
   {
@@ -591,6 +623,7 @@
     },
     "price": 18,
     "category": "sandwiches",
+    "popular": false,
     "image": "/images/meat-shawarma-wrap.jpg"
   },
   {
@@ -609,6 +642,7 @@
     },
     "price": 16,
     "category": "sandwiches",
+    "popular": false,
     "image": "/images/soujouk-wrap.jpg"
   },
   {
@@ -627,6 +661,7 @@
     },
     "price": 15,
     "category": "sandwiches",
+    "popular": false,
     "image": "/images/tawook-wrap.jpg"
   },
   {
@@ -645,6 +680,7 @@
     },
     "price": 24,
     "category": "pasta",
+    "popular": false,
     "image": "/images/chicken-alfredo-pasta.jpg"
   },
   {
@@ -663,6 +699,7 @@
     },
     "price": 18,
     "category": "pasta",
+    "popular": false,
     "image": "/images/penne-arabiata.jpg"
   },
   {
@@ -681,6 +718,7 @@
     },
     "price": 7,
     "category": "beverages",
+    "popular": false,
     "image": "/images/beer.jpg"
   },
   {
@@ -699,6 +737,7 @@
     },
     "price": 3,
     "category": "beverages",
+    "popular": false,
     "image": "/images/black-tea.jpg"
   },
   {
@@ -717,6 +756,7 @@
     },
     "price": 4,
     "category": "beverages",
+    "popular": false,
     "image": "/images/coffee.jpg"
   },
   {
@@ -735,6 +775,7 @@
     },
     "price": 9,
     "category": "beverages",
+    "popular": false,
     "image": "/images/coffee-rakwa.jpg"
   },
   {
@@ -753,6 +794,7 @@
     },
     "price": 5,
     "category": "beverages",
+    "popular": false,
     "image": "/images/ice-tea.jpg"
   },
   {
@@ -771,6 +813,7 @@
     },
     "price": 3,
     "category": "beverages",
+    "popular": false,
     "image": "/images/soft-drinks.jpg"
   },
   {
@@ -789,6 +832,7 @@
     },
     "price": 2,
     "category": "beverages",
+    "popular": false,
     "image": "/images/water.jpg"
   },
   {
@@ -807,6 +851,7 @@
     },
     "price": 5,
     "category": "beverages",
+    "popular": false,
     "image": "/images/laban-ayran.jpg"
   }
 ]

@@ -2,19 +2,13 @@ export const en = {
   nav: { menu: 'Menu', about: 'About', location: 'Location', contact: 'Contact' },
   hero: { title: 'Beirut Saj International Restaurant', subtitle: 'Authentic Lebanese Cuisine in Tbilisi', cta: 'View Menu' },
   menu: {
-    title: 'Our Menu',
-    search: 'Search dishes...',
-    categories: {
-      all: 'All',
-      breakfast: 'Breakfast',
-      manakish: 'Manakish Saj',
-      appetizers: 'Appetizers',
-      main: 'Main Course',
-      sandwiches: 'Sandwiches',
-      pasta: 'Pasta',
-      salad: 'Salad',
-      beverages: 'Beverages'
-    },
+  title: 'Our Menu',
+  search: 'Search dishes...',
+  categories: {
+    all: 'All'
+  },
+  addToCart: 'Add to Cart'
+},
     addToCart: 'Add to Cart'
   },
   cart: { title: 'Your Order', empty: 'Your cart is empty', total: 'Total', checkout: 'Place Order', remove: 'Remove' },
