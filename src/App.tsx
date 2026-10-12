@@ -58,11 +58,24 @@ export default function App() {
       <Hero translations={t} />
       <MenuSection lang={lang} translations={t} onAddToCart={addToCart} />
       <section id="about" className="py-20 bg-olive-700 text-white px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.about.title}</h2>
-          <p className="text-lg md:text-xl text-cream-200 leading-relaxed">{t.about.description}</p>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.about.title}</h2>
+    <p className="text-lg md:text-xl text-cream-200 leading-relaxed mb-10">
+      {t.about.description}
+    </p>
+    
+    {/* Логотип после текста */}
+    <div className="flex justify-center">
+      <div className="bg-white rounded-full p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-110 cursor-pointer">
+        <img 
+          src="/logo.png" 
+          alt="Beirut Saj Logo" 
+          className="w-48 md:w-64 lg:w-72 h-auto object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
       <Footer translations={t} />
       
       <CartDrawer 
