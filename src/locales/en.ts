@@ -8,8 +8,7 @@ export const en = {
     all: 'All'
   },
   addToCart: 'Add to Cart'
-},
-    addToCart: 'Add to Cart'
+
   },
   cart: { title: 'Your Order', empty: 'Your cart is empty', total: 'Total', checkout: 'Place Order', remove: 'Remove' },
   order: { title: 'Complete Your Order', name: 'Your Name', phone: 'Phone Number', address: 'Delivery Address', notes: 'Special Instructions', sendWhatsApp: 'Send via WhatsApp', sendEmail: 'Send via Email', or: 'or' },
