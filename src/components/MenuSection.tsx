@@ -100,7 +100,7 @@ export default function MenuSection({ lang, translations, onAddToCart }: Props) 
       </div>
 
       {/* Сетка блюд */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <motion.div layout className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
         {filteredItems.map((item: MenuItem & { popular?: boolean }) => (
           <motion.div 
             key={item.id} 
@@ -122,22 +122,22 @@ export default function MenuSection({ lang, translations, onAddToCart }: Props) 
                 </div>
               )}
             </div>
-            <div className="p-5 flex flex-col flex-grow">
+            <div className="p-3 md:p-5 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-bold text-charcoal-900 leading-tight flex-1">
+                <h3 className="text-sm md:text-lg font-bold text-charcoal-900 leading-tight flex-1">
                   {item.name[lang]}
                 </h3>
                 <span className="text-gold-600 font-bold text-lg ml-3 whitespace-nowrap">
                   {item.price} ₾
                 </span>
               </div>
-              <p className="text-gray-600 text-sm mb-4 flex-grow leading-relaxed">
+              <p className="text-gray-600 text-xs md:text-sm mb-3 md:mb-4 flex-grow leading-relaxed line-clamp-2">
                 {item.description[lang]}
               </p>
               <button 
-                onClick={() => onAddToCart(item)} 
-                className="w-full bg-charcoal-900 hover:bg-gold-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2"
-              >
+  onClick={() => onAddToCart(item)} 
+  className="w-full bg-charcoal-900 hover:bg-gold-600 text-white font-semibold py-2 md:py-3 rounded-lg md:rounded-xl transition-colors flex items-center justify-center gap-2 text-xs md:text-base"
+>
                 {translations.menu.addToCart}
               </button>
             </div>
