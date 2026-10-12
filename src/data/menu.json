@@ -42,7 +42,7 @@
     "price": 15,
     "category": "breakfast",
     "popular": true,
-    "image": "/images/falafel-plate.jpg"
+    "image": "/images/falafel-plate.png"
   },
   {
     "id": "falafel-wrap",
