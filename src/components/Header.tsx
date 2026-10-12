@@ -19,37 +19,39 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    function handleClickOutside(event: MouseEvent) {
       if (langDropdownRef.current && !langDropdownRef.current.contains(event.target as Node)) {
         setLangDropdownOpen(false);
       }
       if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
         setMobileMenuOpen(false);
       }
-    };
+    }
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const languages: { code: Language; label: string; dir: 'ltr' | 'rtl' }[] = [
-    { code: 'en', label: 'English', dir: 'ltr' },
-    { code: 'ka', label: 'ქართული', dir: 'ltr' },
-    { code: 'ru', label: 'Русский', dir: 'ltr' },
-    { code: 'ar', label: 'العربية', dir: 'rtl' },
+  const languages = [
+    { code: 'en' as Language, label: 'English', dir: 'ltr' as const },
+    { code: 'ka' as Language, label: 'ქართული', dir: 'ltr' as const },
+    { code: 'ru' as Language, label: 'Русский', dir: 'ltr' as const },
+    { code: 'ar' as Language, label: 'العربية', dir: 'rtl' as const },
   ];
 
-  const handleLangChange = (l: Language) => {
+  function handleLangChange(l: Language) {
     setLang(l);
     const selected = languages.find(x => x.code === l);
-    document.documentElement.dir = selected?.dir || 'ltr';
-    document.documentElement.lang = l;
+    if (selected) {
+      document.documentElement.dir = selected.dir;
+      document.documentElement.lang = l;
+    }
     setLangDropdownOpen(false);
-  };
+  }
 
-  const scrollToHome = () => {
+  function scrollToHome() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setMobileMenuOpen(false);
-  };
+  }
 
   const navLinks = [
     { key: 'menu', href: '#menu' },
@@ -91,7 +93,10 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
           <div className="flex items-center gap-3" ref={mobileMenuRef}>
             <div className="relative hidden sm:block" ref={langDropdownRef}>
               <button 
-                onClick={() => setLangDropdownOpen(!langDropdownOpen)} 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setLangDropdownOpen(!langDropdownOpen);
+                }} 
                 className="flex items-center gap-2 text-charcoal-800 hover:text-gold-600 px-3 py-2 rounded-lg hover:bg-cream-100 transition-colors"
               >
                 <span className="uppercase font-semibold text-sm">{lang}</span>
@@ -108,7 +113,10 @@ export default function Header({ lang, setLang, translations, onCartClick, cartC
                     {languages.map((l) => (
                       <button 
                         key={l.code} 
-                        onClick={() => handleLangChange(l.code)} 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleLangChange(l.code);
+                        }} 
                         className={`w-full text-left px-4 py-2 hover:bg-cream-100 rtl:text-right transition-colors ${
                           lang === l.code ? 'bg-cream-100 font-semibold text-gold-600' : 'text-charcoal-800'
                         }`}
